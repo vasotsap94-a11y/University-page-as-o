@@ -1,0 +1,98 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#90EE90"/>
+  
+  <!-- Sky -->
+  <rect width="800" height="300" fill="#87CEEB"/>
+  
+  <!-- Ground/Field -->
+  <ellipse cx="400" cy="500" rx="350" ry="80" fill="#228B22"/>
+  
+  <!-- Diverse group of students -->
+  
+  <!-- Student 1 - Standing -->
+  <g transform="translate(200, 350)">
+    <circle cx="0" cy="0" r="30" fill="#d4a574"/>
+    <rect x="-25" y="35" width="50" height="70" rx="8" fill="#1a5490"/>
+    <rect x="-25" y="105" width="22" height="50" rx="5" fill="#2c3e50"/>
+    <rect x="3" y="105" width="22" height="50" rx="5" fill="#2c3e50"/>
+    <rect x="-30" y="40" width="20" height="55" rx="5" fill="#1a5490"/>
+    <rect x="10" y="40" width="20" height="55" rx="5" fill="#1a5490"/>
+  </g>
+  
+  <!-- Student 2 - In wheelchair -->
+  <g transform="translate(400, 370)">
+    <circle cx="0" cy="0" r="30" fill="#c68642"/>
+    <rect x="-25" y="35" width="50" height="60" rx="8" fill="#d97706"/>
+    <circle cx="-20" cy="110" r="25" fill="none" stroke="#2c3e50" stroke-width="4"/>
+    <circle cx="20" cy="110" r="25" fill="none" stroke="#2c3e50" stroke-width="4"/>
+    <circle cx="-20" cy="110" r="8" fill="#696969"/>
+    <circle cx="20" cy="110" r="8" fill="#696969"/>
+    <rect x="-35" y="80" width="70" height="8" rx="4" fill="#2c3e50"/>
+    <rect x="-30" y="45" width="15" height="45" rx="4" fill="#2c3e50"/>
+  </g>
+  
+  <!-- Student 3 - Standing with prosthetic -->
+  <g transform="translate(550, 350)">
+    <circle cx="0" cy="0" r="30" fill="#f4c2a5"/>
+    <rect x="-25" y="35" width="50" height="70" rx="8" fill="#047857"/>
+    <rect x="-25" y="105" width="22" height="50" rx="5" fill="#2c3e50"/>
+    <!-- Prosthetic leg -->
+    <rect x="3" y="105" width="22" height="50" rx="2" fill="#c0c0c0"/>
+    <rect x="3" y="110" width="22" height="5" fill="#696969"/>
+    <rect x="3" y="125" width="22" height="5" fill="#696969"/>
+    <rect x="3" y="140" width="22" height="5" fill="#696969"/>
+    <rect x="-30" y="40" width="20" height="55" rx="5" fill="#047857"/>
+    <rect x="10" y="40" width="20" height="55" rx="5" fill="#047857"/>
+  </g>
+  
+  <!-- Student 4 - With cane -->
+  <g transform="translate(300, 360)">
+    <circle cx="0" cy="0" r="30" fill="#8d5524"/>
+    <rect x="-25" y="35" width="50" height="70" rx="8" fill="#dc2626"/>
+    <rect x="-25" y="105" width="22" height="50" rx="5" fill="#2c3e50"/>
+    <rect x="3" y="105" width="22" height="50" rx="5" fill="#2c3e50"/>
+    <rect x="-30" y="40" width="20" height="55" rx="5" fill="#dc2626"/>
+    <!-- Cane -->
+    <line x1="25" y1="50" x2="35" y2="140" stroke="#8B4513" stroke-width="4" stroke-linecap="round"/>
+    <rect x="33" y="138" width="8" height="15" rx="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- Ball/Activity prop -->
+  <circle cx="400" cy="300" r="25" fill="#ff6b6b" opacity="0.8"/>
+  <circle cx="405" cy="295" r="8" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Building in background -->
+  <rect x="50" y="100" width="200" height="150" fill="#1a5490" opacity="0.5"/>
+  <rect x="70" y="120" width="40" height="50" fill="#ffffff" opacity="0.6"/>
+  <rect x="130" y="120" width="40" height="50" fill="#ffffff" opacity="0.6"/>
+  <rect x="190" y="120" width="40" height="50" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Trees -->
+  <ellipse cx="650" cy="280" rx="40" ry="60" fill="#228B22"/>
+  <rect x="640" y="280" width="20" height="100" fill="#8B4513"/>
+  
+  <ellipse cx="750" cy="300" rx="35" ry="50" fill="#228B22"/>
+  <rect x="742" y="300" width="16" height="80" fill="#8B4513"/>
+  
+  <!-- Accessibility symbol on ground -->
+  <g transform="translate(500, 480)" opacity="0.4">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="0" cy="-10" r="7" fill="#ffffff"/>
+    <path d="M -8 0 Q -8 8, 0 12 T 8 0" fill="#ffffff"/>
+    <line x1="-12" y1="4" x2="-20" y2="12" stroke="#ffffff" stroke-width="4"/>
+    <line x1="12" y1="4" x2="20" y2="12" stroke="#ffffff" stroke-width="4"/>
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="100" cy="80" r="40" fill="#FFD700" opacity="0.8"/>
+  <line x1="100" y1="20" x2="100" y2="40" stroke="#FFD700" stroke-width="3"/>
+  <line x1="100" y1="120" x2="100" y2="140" stroke="#FFD700" stroke-width="3"/>
+  <line x1="40" y1="80" x2="60" y2="80" stroke="#FFD700" stroke-width="3"/>
+  <line x1="140" y1="80" x2="160" y2="80" stroke="#FFD700" stroke-width="3"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1a5490" text-anchor="middle">
+    Inclusive Student Activities
+  </text>
+</svg>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Accessible University - A modern, inclusive institution committed to excellence in education and accessibility">
+    <title>Accessible University | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Skip Links for Keyboard Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#navigation" class="skip-link">Skip to navigation</a>
+
+    <!-- Header -->
+    <header role="banner" class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" aria-label="Accessible University Home">
+                        <svg width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                            <rect x="5" y="5" width="40" height="40" fill="#1a5490" rx="5"/>
+                            <text x="25" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">AU</text>
+                        </svg>
+                        <span class="logo-text">Accessible University</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" 
+                        aria-expanded="false" 
+                        aria-controls="navigation"
+                        aria-label="Toggle navigation menu">
+                    <span class="hamburger-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+
+                <!-- Navigation -->
+                <nav id="navigation" role="navigation" class="main-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link" aria-current="page">About</a></li>
+                        <li><a href="#programs" class="nav-link">Programs</a></li>
+                        <li><a href="#admissions" class="nav-link">Admissions</a></li>
+                        <li><a href="#campus" class="nav-link">Campus Life</a></li>
+                        <li><a href="#research" class="nav-link">Research</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Accessibility Controls -->
+                <div class="accessibility-controls" role="region" aria-label="Accessibility controls">
+                    <button id="contrast-toggle" 
+                            class="control-btn" 
+                            aria-label="Toggle high contrast mode"
+                            aria-pressed="false">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2 A10 10 0 0 1 12 22 Z"/>
+                        </svg>
+                        <span class="sr-only">Contrast</span>
+                    </button>
+                    <button id="font-size-increase" 
+                            class="control-btn" 
+                            aria-label="Increase font size">
+                        <span aria-hidden="true">A+</span>
+                    </button>
+                    <button id="font-size-decrease" 
+                            class="control-btn" 
+                            aria-label="Decrease font size">
+                        <span aria-hidden="true">A-</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="region" aria-label="Welcome banner">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Accessible University</h1>
+            <p class="hero-subtitle">Education for Everyone, Accessible to All</p>
+            <div class="hero-actions">
+                <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                <a href="#admissions" class="btn btn-secondary">Apply Now</a>
+            </div>
+        </div>
+        <img src="assets/hero-image.jpg" 
+             alt="Students collaborating in a modern, bright university classroom with accessible workstations" 
+             class="hero-image"
+             loading="eager">
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" tabindex="-1">
+        
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Our University</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>Accessible University is a pioneer in inclusive education, committed to providing world-class learning opportunities for all students, regardless of their abilities. Founded in 1985, we have consistently championed accessibility and universal design in all aspects of campus life.</p>
+                        <p>Our mission is to foster an environment where every student can thrive academically, socially, and personally. We believe that diversity in learning styles and abilities enriches the educational experience for everyone.</p>
+                        <ul class="features-list">
+                            <li>
+                                <strong>Inclusive Learning:</strong> All courses designed with accessibility at the forefront
+                            </li>
+                            <li>
+                                <strong>Assistive Technology:</strong> State-of-the-art tools available campus-wide
+                            </li>
+                            <li>
+                                <strong>Diverse Community:</strong> Students from over 80 countries
+                            </li>
+                            <li>
+                                <strong>Personalized Support:</strong> Dedicated accessibility services team
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-image">
+                        <img src="assets/about-campus.jpg" 
+                             alt="Accessible University's main campus building featuring wheelchair ramps, automatic doors, and modern architecture" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="section programs-section">
+            <div class="container">
+                <h2 class="section-title">Academic Programs</h2>
+                <p class="section-intro">Discover our wide range of undergraduate and graduate programs, all designed with accessibility and excellence in mind.</p>
+                
+                <div class="programs-grid">
+                    <!-- Program Card 1 -->
+                    <article class="program-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="#1a5490">
+                                <rect x="8" y="12" width="32" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 20h16M16 26h16M16 32h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Computer Science</h3>
+                        <p class="card-description">Learn cutting-edge programming, AI, and software development with accessible coding tools and assistive technologies.</p>
+                        <a href="#" class="card-link">Learn more<span class="sr-only"> about Computer Science program</span></a>
+                    </article>
+
+                    <!-- Program Card 2 -->
+                    <article class="program-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="#1a5490">
+                                <circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 8v16l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Business Administration</h3>
+                        <p class="card-description">Develop leadership skills and business acumen in an inclusive environment that values diverse perspectives.</p>
+                        <a href="#" class="card-link">Learn more<span class="sr-only"> about Business Administration program</span></a>
+                    </article>
+
+                    <!-- Program Card 3 -->
+                    <article class="program-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="#1a5490">
+                                <path d="M24 8l-16 12v20h12v-12h8v12h12V20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Psychology</h3>
+                        <p class="card-description">Explore the human mind and behavior with emphasis on cognitive diversity and neurodiversity-affirming practices.</p>
+                        <a href="#" class="card-link">Learn more<span class="sr-only"> about Psychology program</span></a>
+                    </article>
+
+                    <!-- Program Card 4 -->
+                    <article class="program-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="#1a5490">
+                                <path d="M12 24c0-6.627 5.373-12 12-12s12 5.373 12 12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 24h8M36 24h-8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Engineering</h3>
+                        <p class="card-description">Design innovative solutions with universal design principles at the core of every project and assignment.</p>
+                        <a href="#" class="card-link">Learn more<span class="sr-only"> about Engineering program</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions" class="section admissions-section">
+            <div class="container">
+                <h2 class="section-title">Admissions</h2>
+                <div class="admissions-content">
+                    <div class="admissions-info">
+                        <h3>Join Our Community</h3>
+                        <p>We welcome applications from students of all backgrounds and abilities. Our admissions process is designed to be accessible and accommodating.</p>
+                        
+                        <h4>Application Process</h4>
+                        <ol class="process-list">
+                            <li>
+                                <strong>Submit Online Application</strong>
+                                <p>Our application portal is fully accessible with screen reader support and keyboard navigation.</p>
+                            </li>
+                            <li>
+                                <strong>Request Accommodations</strong>
+                                <p>Let us know if you need any accommodations during the application or interview process.</p>
+                            </li>
+                            <li>
+                                <strong>Review Process</strong>
+                                <p>Applications are reviewed holistically, considering academic achievement, personal qualities, and potential.</p>
+                            </li>
+                            <li>
+                                <strong>Decision Notification</strong>
+                                <p>Receive your decision via accessible email or your preferred communication method.</p>
+                            </li>
+                        </ol>
+
+                        <div class="cta-box">
+                            <h4>Ready to Apply?</h4>
+                            <p>Applications for Fall 2026 are now open!</p>
+                            <a href="#" class="btn btn-primary">Start Your Application</a>
+                        </div>
+                    </div>
+
+                    <aside class="admissions-stats" aria-label="Admission statistics">
+                        <h3 class="sr-only">Key Statistics</h3>
+                        <div class="stat-item">
+                            <div class="stat-number" aria-label="95 percent">95%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" aria-label="80 plus countries">80+</div>
+                            <div class="stat-label">Countries Represented</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" aria-label="1 to 12 ratio">1:12</div>
+                            <div class="stat-label">Student-Faculty Ratio</div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Life Section -->
+        <section id="campus" class="section campus-section">
+            <div class="container">
+                <h2 class="section-title">Campus Life</h2>
+                <p class="section-intro">Experience a vibrant, inclusive campus community where everyone belongs.</p>
+                
+                <div class="campus-grid">
+                    <div class="campus-item">
+                        <img src="assets/library.jpg" 
+                             alt="Modern accessible library with adjustable-height desks, quiet study rooms, and assistive technology stations" 
+                             loading="lazy">
+                        <h3>Accessible Facilities</h3>
+                        <p>All campus buildings feature ramps, elevators, accessible restrooms, and emergency systems with visual and auditory alerts.</p>
+                    </div>
+
+                    <div class="campus-item">
+                        <img src="assets/student-activities.jpg" 
+                             alt="Diverse group of students participating in an inclusive recreational activity on campus" 
+                             loading="lazy">
+                        <h3>Student Organizations</h3>
+                        <p>Over 100 student clubs and organizations, all committed to inclusive practices and accessible events.</p>
+                    </div>
+
+                    <div class="campus-item">
+                        <img src="assets/dining.jpg" 
+                             alt="Accessible dining hall with wide aisles, varied seating options, and clear signage" 
+                             loading="lazy">
+                        <h3>Dining Services</h3>
+                        <p>Multiple dining options with allergen information, braille menus, and staff trained in accessibility support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section research-section">
+            <div class="container">
+                <h2 class="section-title">Research Excellence</h2>
+                <div class="research-content">
+                    <p>Our faculty and students conduct groundbreaking research across multiple disciplines, with a special focus on accessibility technology and inclusive design.</p>
+                    
+                    <div class="research-highlights">
+                        <article class="research-card">
+                            <h3>Accessibility Innovation Lab</h3>
+                            <p>Developing next-generation assistive technologies including AI-powered screen readers and haptic learning tools.</p>
+                            <a href="#" class="text-link">Read more<span class="sr-only"> about Accessibility Innovation Lab</span></a>
+                        </article>
+
+                        <article class="research-card">
+                            <h3>Universal Design Institute</h3>
+                            <p>Creating frameworks and guidelines for accessible architecture, software, and educational materials.</p>
+                            <a href="#" class="text-link">Read more<span class="sr-only"> about Universal Design Institute</span></a>
+                        </article>
+
+                        <article class="research-card">
+                            <h3>Neurodiversity Studies Center</h3>
+                            <p>Advancing understanding of cognitive diversity and developing neurodiversity-affirming educational practices.</p>
+                            <a href="#" class="text-link">Read more<span class="sr-only"> about Neurodiversity Studies Center</span></a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Message</h3>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Name <span class="required" aria-label="required">*</span></label>
+                                <input type="text" 
+                                       id="name" 
+                                       name="name" 
+                                       required 
+                                       aria-required="true"
+                                       autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email <span class="required" aria-label="required">*</span></label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       required 
+                                       aria-required="true"
+                                       autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required" aria-label="required">*</span></label>
+                                <select id="subject" name="subject" required aria-required="true">
+                                    <option value="">Please select</option>
+                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="programs">Program Information</option>
+                                    <option value="accessibility">Accessibility Support</option>
+                                    <option value="general">General Question</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <span class="required" aria-label="required">*</span></label>
+                                <textarea id="message" 
+                                          name="message" 
+                                          rows="5" 
+                                          required 
+                                          aria-required="true"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <address>
+                            <div class="contact-item">
+                                <strong>Address:</strong><br>
+                                123 University Avenue<br>
+                                Academic City, AC 12345<br>
+                                United States
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Phone:</strong><br>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                                <span class="small-text">TTY: +1 (555) 123-4568</span>
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Email:</strong><br>
+                                <a href="mailto:info@accessible-university.edu">info@accessible-university.edu</a>
+                            </div>
+
+                            <div class="contact-item">
+                                <strong>Accessibility Services:</strong><br>
+                                <a href="mailto:accessibility@accessible-university.edu">accessibility@accessible-university.edu</a><br>
+                                <a href="tel:+15551234570">+1 (555) 123-4570</a>
+                            </div>
+                        </address>
+
+                        <div class="office-hours">
+                            <h4>Office Hours</h4>
+                            <p>
+                                Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 4:00 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Academic Programs</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#campus">Campus Life</a></li>
+                        <li><a href="#research">Research</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">Accessibility Services</a></li>
+                        <li><a href="#">IT Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Non-Discrimination Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul class="social-links" aria-label="Social media links">
+                        <li>
+                            <a href="#" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                                </svg>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Twitter">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="YouTube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M23 9.71a8.5 8.5 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.36 78.36 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2.12 2.93 2.93 0 001.71 1.54A78.4 78.4 0 0012 19.73a78.45 78.45 0 008.34-.3 2.92 2.92 0 001.53-.78 9.9 9.9 0 001.05-3.32 48.29 48.29 0 000-6.48z"/>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/>
+                                </svg>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Accessible University. All rights reserved.</p>
+                <p class="wcag-badge">
+                    <a href="#" aria-label="WCAG 2.2 Level AAA Conformance">
+                        <span aria-hidden="true">WCAG 2.2 AAA</span>
+                        <span class="sr-only">This website conforms to WCAG 2.2 Level AAA standards</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" 
+            class="back-to-top" 
+            aria-label="Back to top"
+            hidden>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true" focusable="false">
+            <path d="M12 19V5M5 12l7-7 7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

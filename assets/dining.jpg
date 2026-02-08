@@ -1,0 +1,113 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f0f4f8"/>
+  
+  <!-- Floor -->
+  <rect y="450" width="800" height="150" fill="#d1d5db"/>
+  
+  <!-- Tables with wide aisles -->
+  <rect x="50" y="400" width="150" height="80" fill="#8B4513" rx="5"/>
+  <rect x="250" y="400" width="150" height="80" fill="#8B4513" rx="5"/>
+  <rect x="450" y="400" width="150" height="80" fill="#8B4513" rx="5"/>
+  <rect x="650" y="400" width="100" height="80" fill="#8B4513" rx="5"/>
+  
+  <!-- Table legs -->
+  <rect x="70" y="480" width="15" height="50" fill="#654321"/>
+  <rect x="165" y="480" width="15" height="50" fill="#654321"/>
+  <rect x="270" y="480" width="15" height="50" fill="#654321"/>
+  <rect x="365" y="480" width="15" height="50" fill="#654321"/>
+  <rect x="470" y="480" width="15" height="50" fill="#654321"/>
+  <rect x="565" y="480" width="15" height="50" fill="#654321"/>
+  <rect x="670" y="480" width="15" height="50" fill="#654321"/>
+  <rect x="720" y="480" width="15" height="50" fill="#654321"/>
+  
+  <!-- Food service counter -->
+  <rect x="50" y="150" width="700" height="100" fill="#2c3e50"/>
+  <rect x="50" y="150" width="700" height="20" fill="#1a5490"/>
+  
+  <!-- Serving areas with labels -->
+  <rect x="80" y="180" width="120" height="60" fill="#ffffff" stroke="#1a5490" stroke-width="2"/>
+  <text x="140" y="215" font-family="Arial" font-size="14" font-weight="bold" fill="#1a5490" text-anchor="middle">Salads</text>
+  
+  <rect x="230" y="180" width="120" height="60" fill="#ffffff" stroke="#1a5490" stroke-width="2"/>
+  <text x="290" y="215" font-family="Arial" font-size="14" font-weight="bold" fill="#1a5490" text-anchor="middle">Hot Meals</text>
+  
+  <rect x="380" y="180" width="120" height="60" fill="#ffffff" stroke="#1a5490" stroke-width="2"/>
+  <text x="440" y="215" font-family="Arial" font-size="14" font-weight="bold" fill="#1a5490" text-anchor="middle">Desserts</text>
+  
+  <rect x="530" y="180" width="120" height="60" fill="#ffffff" stroke="#1a5490" stroke-width="2"/>
+  <text x="590" y="215" font-family="Arial" font-size="14" font-weight="bold" fill="#1a5490" text-anchor="middle">Beverages</text>
+  
+  <!-- Braille menu representation -->
+  <rect x="50" y="280" width="200" height="80" fill="#ffffff" stroke="#1a5490" stroke-width="3"/>
+  <text x="150" y="310" font-family="Arial" font-size="18" font-weight="bold" fill="#1a5490" text-anchor="middle">BRAILLE MENU</text>
+  <g transform="translate(80, 325)">
+    <circle cx="0" cy="0" r="3" fill="#1a5490"/>
+    <circle cx="10" cy="0" r="3" fill="#1a5490"/>
+    <circle cx="0" cy="10" r="3" fill="#1a5490"/>
+    <circle cx="10" cy="10" r="3" fill="#1a5490"/>
+    <circle cx="0" cy="20" r="3" fill="#1a5490"/>
+    
+    <circle cx="25" cy="0" r="3" fill="#1a5490"/>
+    <circle cx="35" cy="0" r="3" fill="#1a5490"/>
+    <circle cx="25" cy="10" r="3" fill="#1a5490"/>
+    <circle cx="25" cy="20" r="3" fill="#1a5490"/>
+    
+    <circle cx="50" cy="0" r="3" fill="#1a5490"/>
+    <circle cx="60" cy="0" r="3" fill="#1a5490"/>
+    <circle cx="50" cy="10" r="3" fill="#1a5490"/>
+    <circle cx="60" cy="10" r="3" fill="#1a5490"/>
+    <circle cx="60" cy="20" r="3" fill="#1a5490"/>
+  </g>
+  
+  <!-- Allergen information board -->
+  <rect x="300" y="280" width="250" height="80" fill="#ffffff" stroke="#d97706" stroke-width="3"/>
+  <text x="425" y="305" font-family="Arial" font-size="16" font-weight="bold" fill="#d97706" text-anchor="middle">ALLERGEN INFO</text>
+  <text x="320" y="330" font-family="Arial" font-size="12" fill="#2c3e50">🥜 Nuts  🥛 Dairy  🌾 Gluten</text>
+  <text x="320" y="350" font-family="Arial" font-size="12" fill="#2c3e50">🦐 Shellfish  🥚 Eggs  🌰 Soy</text>
+  
+  <!-- Staff member assisting -->
+  <g transform="translate(650, 180)">
+    <circle cx="0" cy="0" r="25" fill="#d4a574"/>
+    <rect x="-20" y="30" width="40" height="50" rx="6" fill="#1a5490"/>
+    <rect x="-25" y="35" width="15" height="40" rx="4" fill="#1a5490"/>
+    <rect x="10" y="35" width="15" height="40" rx="4" fill="#1a5490"/>
+  </g>
+  
+  <!-- Accessible seating markers -->
+  <g transform="translate(120, 440)">
+    <circle cx="0" cy="0" r="25" fill="#1a5490" opacity="0.3"/>
+    <circle cx="0" cy="-8" r="6" fill="#1a5490"/>
+    <path d="M -6 0 Q -6 5, 0 8 T 6 0" fill="#1a5490"/>
+    <line x1="-10" y1="2" x2="-16" y2="10" stroke="#1a5490" stroke-width="3"/>
+    <circle cx="-5" cy="14" r="10" fill="none" stroke="#1a5490" stroke-width="2"/>
+    <circle cx="5" cy="14" r="10" fill="none" stroke="#1a5490" stroke-width="2"/>
+  </g>
+  
+  <!-- Wide aisle arrows -->
+  <g opacity="0.3">
+    <polygon points="425,350 410,370 425,365 440,370" fill="#1a5490"/>
+    <polygon points="425,500 410,480 425,485 440,480" fill="#1a5490"/>
+    <text x="425" y="430" font-family="Arial" font-size="14" font-weight="bold" fill="#1a5490" text-anchor="middle">WIDE</text>
+    <text x="425" y="450" font-family="Arial" font-size="14" font-weight="bold" fill="#1a5490" text-anchor="middle">AISLE</text>
+  </g>
+  
+  <!-- Signage with clear contrast -->
+  <rect x="50" y="50" width="300" height="60" fill="#1a5490"/>
+  <text x="200" y="90" font-family="Arial" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">DINING HALL</text>
+  
+  <!-- Hanging lights -->
+  <line x1="150" y1="0" x2="150" y2="120" stroke="#FFD700" stroke-width="2"/>
+  <circle cx="150" cy="120" r="15" fill="#FFD700" opacity="0.8"/>
+  
+  <line x1="400" y1="0" x2="400" y2="120" stroke="#FFD700" stroke-width="2"/>
+  <circle cx="400" cy="120" r="15" fill="#FFD700" opacity="0.8"/>
+  
+  <line x1="650" y1="0" x2="650" y2="120" stroke="#FFD700" stroke-width="2"/>
+  <circle cx="650" cy="120" r="15" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Exit sign (accessible) -->
+  <rect x="700" y="50" width="80" height="40" fill="#047857"/>
+  <text x="740" y="75" font-family="Arial" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">EXIT</text>
+  <polygon points="770,70 780,70 775,75" fill="#ffffff"/>
+</svg>

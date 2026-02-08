@@ -1,0 +1,46 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d6db5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#heroGrad)"/>
+  
+  <!-- Decorative elements representing accessibility -->
+  <circle cx="200" cy="150" r="80" fill="#ffffff" opacity="0.1"/>
+  <circle cx="1000" cy="450" r="100" fill="#ffffff" opacity="0.1"/>
+  
+  <!-- Students illustration (simplified) -->
+  <g transform="translate(400, 200)">
+    <!-- Student 1 -->
+    <circle cx="0" cy="0" r="40" fill="#f0f4f8"/>
+    <rect x="-30" y="45" width="60" height="80" rx="10" fill="#f0f4f8"/>
+    
+    <!-- Student 2 -->
+    <circle cx="150" cy="0" r="40" fill="#e5e7eb"/>
+    <rect x="120" y="45" width="60" height="80" rx="10" fill="#e5e7eb"/>
+    
+    <!-- Student 3 in wheelchair -->
+    <circle cx="300" cy="0" r="40" fill="#d1d5db"/>
+    <rect x="270" y="45" width="60" height="60" rx="10" fill="#d1d5db"/>
+    <circle cx="285" cy="130" r="25" fill="none" stroke="#d1d5db" stroke-width="4"/>
+    <circle cx="315" cy="130" r="25" fill="none" stroke="#d1d5db" stroke-width="4"/>
+  </g>
+  
+  <!-- Accessibility icon -->
+  <g transform="translate(900, 100)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.8"/>
+    <circle cx="0" cy="-20" r="15" fill="#ffffff" opacity="0.8"/>
+    <path d="M -15 0 Q -15 20, 0 30 T 15 0" fill="#ffffff" opacity="0.8"/>
+    <line x1="-25" y1="15" x2="-40" y2="30" stroke="#ffffff" stroke-width="6" opacity="0.8"/>
+    <line x1="25" y1="15" x2="40" y2="30" stroke="#ffffff" stroke-width="6" opacity="0.8"/>
+  </g>
+  
+  <!-- Text overlay -->
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Accessible Education for All
+  </text>
+</svg>
